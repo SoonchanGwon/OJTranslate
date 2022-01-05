@@ -15,20 +15,20 @@
           <div class="field">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input name="user_id" placeholder="用户名" type="text" id="username">
+              <input name="user_id" placeholder="사용자 아이디" type="text" id="username">
             </div>
           </div>
           <div class="field">
             <div class="ui left icon input">
               <i class="lock icon"></i>
-              <input name="password" placeholder="密码" type="password" id="password">
+              <input name="password" placeholder="비밀번호" type="password" id="password">
             </div>
           </div>
           <?php if($OJ_VCODE){?>
             <div class="field">
               <div class="ui left icon input">
                 <i class="lock icon"></i>
-                <input name="vcode" placeholder="验证码" type="text">
+                <input name="vcode" placeholder="인증코드" type="text">
                 <img id="vcode-img" onclick="this.src='vcode.php?'+Math.random()" height="30px">
               </div>
             </div>

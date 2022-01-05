@@ -6,40 +6,40 @@
   </div>
           <form action="modify.php" method="post" role="form" class="ui form">
                 <div class="field">
-                    <label for="username">사용자 이름</label>
-                    <input class="form-control" placeholder="请输入用户名"  disabled="disabled" type="text" value="<?php echo $_SESSION[$OJ_NAME.'_'.'user_id']?>">
+                    <label for="username">사용자 아이디</label>
+                    <input class="form-control" placeholder="아이디를 입력하세요"  disabled="disabled" type="text" value="<?php echo $_SESSION[$OJ_NAME.'_'.'user_id']?>">
                 </div>
                 <?php require_once('./include/set_post_key.php');?>
                 <div class="field">
-                    <label for="username">닉네임*</label>
-                    <input name="nick" placeholder="请输入昵称" type="text" value="<?php echo htmlentities($row['nick'],ENT_QUOTES,"UTF-8")?>">
+                    <label for="username">성명*</label>
+                    <input name="nick" placeholder="성명을 입력하세요." type="text" value="<?php echo htmlentities($row['nick'],ENT_QUOTES,"UTF-8")?>">
                 </div>
                 <div class="field">
                     <label class="ui header">비밀번호*</label>
-                      <input name="opassword" placeholder="请输入密码" type="password">
+                      <input name="opassword" placeholder="비밀번호를 입력해 주세요." type="password">
                     </div>
                 <div class="two fields">
                     <div class="field">
                     <label class="ui header">새 비밀번호</label>
-                      <input name="npassword" placeholder="无需修改密码，请勿填写此项" type="password">
+                      <input name="npassword" placeholder="비밀번호를 수정할 필요가 없다면, 이 항목을 작성하지 마십시오." type="password">
                     </div>
                     <div class="field">
                       <label class="ui header">새 비밀번호 확인</label>
-                      <input name="rptpassword" placeholder="无需修改密码，请勿填写此项" type="password">
+                      <input name="rptpassword" placeholder="비밀번호를 수정할 필요가 없다면, 이 항목을 작성하지 마십시오." type="password">
                     </div>
                 </div>
                 <div class="field">
                     <label for="username">서명</label>
-                    <input name="school" placeholder="请输入个性签名" type="text" value="<?php echo htmlentities($row['school'],ENT_QUOTES,"UTF-8")?>">
+                    <input name="school" placeholder="서명을 입력해주세요" type="text" value="<?php echo htmlentities($row['school'],ENT_QUOTES,"UTF-8")?>">
                 </div>
                 <div class="field">
-                    <label for="email">우편*</label>
-                    <input name="email" placeholder="请输入邮箱" type="text" value="<?php echo htmlentities($row['email'],ENT_QUOTES,"UTF-8")?>">
+                    <label for="email">이메일*</label>
+                    <input name="email" placeholder="이메일을 입력하세요" type="text" value="<?php echo htmlentities($row['email'],ENT_QUOTES,"UTF-8")?>">
                 </div>
                 <?php if($OJ_VCODE){?>
                   <div class="field">
-                    <label for="email">이메일*</label>
-                    <input name="vcode" class="form-control" placeholder="请输入验证码" type="text">
+                    <label for="email">인증번호*</label>
+                    <input name="vcode" class="form-control" placeholder="인증번호를 입력하세요" type="text">
                     <img alt="click to change" src="vcode.php" onclick="this.src='vcode.php?'+Math.random()" height="30px">
                   </div>
                 <?php }?>

@@ -61,16 +61,16 @@
                             <!-- <tr>
                             <td colspan="8">
                               <?php
-                              echo "<a href='problemstatus.php?id=$id'>[首页]</a>";
-                              echo "<a href='status.php?problem_id=$id'>[评测列表]</a>";
+                              echo "<a href='problemstatus.php?id=$id'>[메인 화면]</a>";
+                              echo "<a href='status.php?problem_id=$id'>[평가목록]</a>";
                               if ($page>$pagemin){
                               $page--;
-                              echo "<a href='problemstatus.php?id=$id&page=$page'>[上一页]</a>";
+                              echo "<a href='problemstatus.php?id=$id&page=$page'>[이전페이지]</a>";
                               $page++;
                               }
                               if ($page<$pagemax){
                               $page++;
-                              echo "<a href='problemstatus.php?id=$id&page=$page'>[下一页]</a>";
+                              echo "<a href='problemstatus.php?id=$id&page=$page'>[다음페이지]</a>";
                               $page--;
                               }
                               ?>
@@ -84,22 +84,22 @@
                                 <div class="ui pagination menu" style="box-shadow: none; ">
                                   <?php
                                     // <a class="icon item" href="status.php?" id="page_prev">  
-                                    // 首页
+                                    // 메인화면
                                     // </a>
-                                    echo "<a class=\"item\" href='problemstatus.php?id=$id'>首页</a>";
+                                    echo "<a class=\"item\" href='problemstatus.php?id=$id'>메인화면</a>";
                                     if ($page>$pagemin){
                                       $page--;
-                                      echo "<a class=\"item\" href='problemstatus.php?id=$id&page=$page'>上一页</a>";
+                                      echo "<a class=\"item\" href='problemstatus.php?id=$id&page=$page'>이전페이지</a>";
                                       $page++;
                                     }
                                     if ($page<$pagemax){
                                       $page++;
-                                      echo "<a class=\"item\" href='problemstatus.php?id=$id&page=$page'>下一页</a>";
+                                      echo "<a class=\"item\" href='problemstatus.php?id=$id&page=$page'>다음페이지</a>";
                                       $page--;
                                       }
-                                    // <a class="item" href="status.php?&amp;top=65577">上一页</a>      
+                                    // <a class="item" href="status.php?&amp;top=65577">이전페이지</a>      
                                     // <a class="icon item" href="status.php?&amp;top=65538&amp;prevtop=65557" id="page_next">
-                                    //   下一页
+                                    //   다음페이지
                                     // </a>
                                   ?>
                                 </div>
@@ -164,13 +164,13 @@ $(function () {
   			var text = [];
         text.push('<ul style="list-style: none; padding-left: 20px; margin-top: 0; " class="' + chart.id + '-legend">');
             text.push('<li style="font-size: 12px; width: 50%; display: inline-block; color: #666; "><span style="width: 10px; height: 10px; display: inline-block; border-radius: 50%; margin-right: 5px; background-color: #32CD32 ; "></span>');
-                text.push('<?php echo "总提交: ".$view_problem[0][1]; ?>');
+                text.push('<?php echo "총 제출: ".$view_problem[0][1]; ?>');
             text.push('</li>');
             text.push('<li style="font-size: 12px; width: 50%; display: inline-block; color: #666; "><span style="width: 10px; height: 10px; display: inline-block; border-radius: 50%; margin-right: 5px; background-color: #32CD32 ; "></span>');
-                text.push('<?php echo "用户(提交): ".$view_problem[1][1]; ?>');
+                text.push('<?php echo "사용자(제출): ".$view_problem[1][1]; ?>');
             text.push('</li>');
             text.push('<li style="font-size: 12px; width: 50%; display: inline-block; color: #666; "><span style="width: 10px; height: 10px; display: inline-block; border-radius: 50%; margin-right: 5px; background-color: #32CD32 ; "></span>');
-                text.push('<?php echo "用户(解决): ".$view_problem[2][1]; ?>');
+                text.push('<?php echo "사용자(해결): ".$view_problem[2][1]; ?>');
             text.push('</li>');
         text.push('</ul>');
 

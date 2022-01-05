@@ -1,4 +1,4 @@
-<?php $show_title="提交 - $OJ_NAME"; ?>
+<?php $show_title="제출 - $OJ_NAME"; ?>
 <?php include("template/$OJ_TEMPLATE/header.php");?>
 
   <style>
@@ -66,7 +66,7 @@ echo"<option value=$i ".( $lastlang==$i?"selected":"").">
 <?php } ?>
 <!-- <input id="Submit" class="btn btn-info" type=button value="<?php echo $MSG_SUBMIT?>" onclick="do_submit();" > -->
 <div class="ui center aligned vertical segment" style="padding-bottom: 0; ">
-<button type="submit" class="ui labeled icon button"  onclick="do_submit();"><i class="ui edit icon"></i>提交</button>
+<button type="submit" class="ui labeled icon button"  onclick="do_submit();"><i class="ui edit icon"></i>제출</button>
 <!--div onclick="show_custom_test()" class="ui positive button">自定义测试</div-->
 </div>
 <?php if (isset($OJ_ENCODE_SUBMIT)&&$OJ_ENCODE_SUBMIT){?>

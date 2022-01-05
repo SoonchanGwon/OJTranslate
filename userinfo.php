@@ -33,8 +33,8 @@
                     </div>
                 </div>
                 <div class="extra content">
-                    <a><i class="check icon"></i>通过 <?php echo $AC ?> 题</a>
-                    <a style="float: right; "><i class="star icon"></i>排名 <?php echo $Rank ?></a>
+                    <a><i class="check icon"></i>통과 <?php echo $AC ?> 문제</a>
+                    <a style="float: right; "><i class="star icon"></i>순위 <?php echo $Rank ?></a>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                                     </div>
                                     <!-- <div class="row">
                                         <div class="column">
-                                            <h4 class="ui top attached block header">注册于</h4>
+                                            <h4 class="ui top attached block header">등록하기</h4>
                                             <div class="ui bottom attached segment" class="font-content">
                                                 <%= syzoj.utils.formatDate(show_user.register_time) %>
                                             </div>
@@ -97,7 +97,7 @@
                                 <div class="ui grid">
                                   <div class="row">
                                       <div class="column">
-                                          <h4 class="ui top attached block header">统计</h4>
+                                          <h4 class="ui top attached block header">통계</h4>
                                           <div class="ui bottom attached segment">
                                             <div id="pie_chart_legend"></div>
                                             <div style="width: 260px; height: 260px; margin-left: 33.5px; "><canvas style="width: 260px; height: 260px; " id="pie_chart"></canvas></div>
