@@ -6,10 +6,8 @@
 
 Ubuntu 20.04.3 LTS ( https://ubuntu.com/download/desktop )에 설치하였습니다.
 
-<pre><code>
-wget http://dl.hustoj.com/install-ubuntu20.04.sh
-sudo bash 설치-ubuntu20.04.sh
-</code></pre>
+<pre><code>wget http://dl.hustoj.com/install-ubuntu20.04.sh
+sudo bash install-ubuntu20.04.sh</code></pre>
 
 로 하면 바로 설치가 됩니다. 
 
