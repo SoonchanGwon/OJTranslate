@@ -30,7 +30,7 @@ nautilus -q</code></pre>
 
 git을 이용하여 다운로드 받은후 파일을 모두 옮겨 줍니다. 
 <pre><code>sudo git clone https://github.com/SoonchanGwon/OJTranslate.git
-cd OJTranslate.git</code></pre>
+cd OJTranslate</code></pre>
 <pre><code>sudo mv -b *.* /home/judge/src/web/template/syzoj</code></pre>
 
 SYZOJ 테마 폴더(home/judge/src/web/template/syzoj)에 설치하습니다. 
