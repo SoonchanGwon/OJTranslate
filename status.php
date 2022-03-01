@@ -50,7 +50,7 @@
             $showsim=intval($_GET['showsim']);
             else
             $showsim=0;
-            echo "<label style=\"font-size: 1.2em; margin-right: 1px;margin-left: 10px; \">相似度：</label>";
+            echo "<label style=\"font-size: 1.2em; margin-right: 1px;margin-left: 10px; \">유사도：</label>";
           echo "
           <select id=\"appendedInputButton\" class=\"form-control\" name=showsim onchange=\"document.getElementById('simform').submit();\" style=\"width: 110px;\">
           <option value=0 ".($showsim==0?'selected':'').">All</option>
