@@ -100,7 +100,7 @@ div[class*=ace_br] {
       ?>
       
         <div class="ui buttons right floated">
-            <a class="small ui button" href="admin/problem_edit.php?id=<?php echo $id?>&getkey=<?php echo $_SESSION[$OJ_NAME.'_'.'getkey']?>">제목편집</a>
+            <a class="small ui button" href="admin/problem_edit.php?id=<?php echo $id?>&getkey=<?php echo $_SESSION[$OJ_NAME.'_'.'getkey']?>">편집</a>
             <a class="small ui button" href='javascript:phpfm(<?php echo $row['problem_id'];?>)'>테스트데이터</a>
         </div>
       <?php }?>
